@@ -16,6 +16,7 @@ export class DemoCandelChartsComponent implements OnInit{
   ngOnInit(): void {
     this.ctx = this.canvas.nativeElement.getContext('2d')!;
     this.gd.start(640, 480);
+    this.gd.clearObjects();
     this.gd.setDarkMode();
     const candleStick: Candlestick[] = [
       { timestamp: 1621244400000, open: 100, high: 150, low: 80, close: 120 },
@@ -30,7 +31,7 @@ export class DemoCandelChartsComponent implements OnInit{
       { timestamp: 1621590000000, open: 200, high: 240, low: 180, close: 220 },
     ];
     this.gd.addCandleChart(
-      { x: 50, y: 300 },
+      { x: 50, y: 350 },
       candleStick,
       30,
       600,
@@ -54,7 +55,7 @@ export class DemoCandelChartsComponent implements OnInit{
     ];
     this.gd.addAxisX(
       this.ctx,
-      { x: 25, y: 300 },
+      { x: 30, y: 350 },
       600,
       10,
       [
@@ -82,7 +83,7 @@ export class DemoCandelChartsComponent implements OnInit{
     ];
     this.gd.addAxisY(
       this.ctx,
-      { x: 25, y: 300 },
+      { x: 30, y: 350 },
       300,
       3,
       ['0', '100', '200', '300'],

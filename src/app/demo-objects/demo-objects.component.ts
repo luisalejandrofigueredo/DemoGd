@@ -17,6 +17,7 @@ export class DemoObjectsComponent implements OnInit {
     this.ctx = this.canvas.nativeElement.getContext('2d')!;
     this.gd.start(640,480);
     this.gd.setDarkMode();
+    this.gd.clearObjects();
     this.gd.addNode({ x: 150, y: 150 }, "one", "this is the node one", false, 10, 10);
     this.gd.clear(this.ctx);
     this.gd.draw(this.ctx);
