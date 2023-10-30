@@ -34,6 +34,7 @@ export class DemoObjectsComponent implements OnInit {
     this.gd.clear(this.ctx);
     this.gd.draw(this.ctx);
   }
+
   @HostListener("mousedown", ["$event"])
   async onMouseDown(event: MouseEvent) {
     if (this.gd.click(this.ctx, event).length > 0) {
@@ -121,5 +122,3 @@ export class DemoObjectsComponent implements OnInit {
   }
 
 }
-
-

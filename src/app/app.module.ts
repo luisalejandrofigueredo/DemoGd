@@ -13,13 +13,15 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { DemoObjectsComponent } from './demo-objects/demo-objects.component';
 import { DemoCandelChartsComponent } from './demo-candel-charts/demo-candel-charts.component';
+import { PieChartComponent } from './pie-chart/pie-chart.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
     DemoObjectsComponent,
-    DemoCandelChartsComponent
+    DemoCandelChartsComponent,
+    PieChartComponent
   ],
   imports: [
     BrowserModule,
