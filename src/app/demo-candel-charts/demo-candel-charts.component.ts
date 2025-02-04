@@ -4,9 +4,10 @@ import {
   Point, LineObject, Candlestick
 } from 'ng-gd';
 @Component({
-  selector: 'app-demo-candel-charts',
-  templateUrl: './demo-candel-charts.component.html',
-  styleUrls: ['./demo-candel-charts.component.scss']
+    selector: 'app-demo-candel-charts',
+    templateUrl: './demo-candel-charts.component.html',
+    styleUrls: ['./demo-candel-charts.component.scss'],
+    standalone: false
 })
 export class DemoCandelChartsComponent implements OnInit{
   gd = inject(NgGdService);

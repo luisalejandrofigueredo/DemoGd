@@ -7,9 +7,10 @@ import {
   LineObject,
 } from 'ng-gd';
 @Component({
-  selector: 'app-demo-objects',
-  templateUrl: './demo-objects.component.html',
-  styleUrls: ['./demo-objects.component.scss']
+    selector: 'app-demo-objects',
+    templateUrl: './demo-objects.component.html',
+    styleUrls: ['./demo-objects.component.scss'],
+    standalone: false
 })
 export class DemoObjectsComponent implements OnInit {
   gd = inject(NgGdService);

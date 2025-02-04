@@ -6,9 +6,10 @@ import { Router } from '@angular/router';
 import { ContentObserver } from '@angular/cdk/observers';
 
 @Component({
-  selector: 'app-nav',
-  templateUrl: './nav.component.html',
-  styleUrls: ['./nav.component.scss']
+    selector: 'app-nav',
+    templateUrl: './nav.component.html',
+    styleUrls: ['./nav.component.scss'],
+    standalone: false
 })
 export class NavComponent {
 

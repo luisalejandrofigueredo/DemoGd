@@ -2,9 +2,10 @@ import { Component, ElementRef, HostListener, OnInit, ViewChild, inject } from '
 import { LineObject, NgGdService } from 'ng-gd';
 
 @Component({
-  selector: 'app-pie-chart',
-  templateUrl: './pie-chart.component.html',
-  styleUrls: ['./pie-chart.component.scss']
+    selector: 'app-pie-chart',
+    templateUrl: './pie-chart.component.html',
+    styleUrls: ['./pie-chart.component.scss'],
+    standalone: false
 })
 export class PieChartComponent implements OnInit {
   @ViewChild('canvas', { static: true })
